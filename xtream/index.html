@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Xtream Tournaments</title>
+    <link rel="icon" type="image/ico" href="./img/xtream logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Local gaming tournaments, play to earn money">
+    <meta name="keywords" content="Pubg, tournament, unnao, play, earn, pubg, xtream">
+    <meta name="author" content="Manthan Maheshwari">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="./img/manthan.png">
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#main">About</a></li>
+                    <li><a href="tc.pdf" target="blank">Rules</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div style="text-align: center;overflow: hidden;color: blanchedalmond;margin: 0;padding: 0;">
+        <h1 style="background-color: chartreuse;color: black;text-decoration: underline;text-shadow: 2px 2px 2px red;margin: 0;">
+            Important Notice to Participants
+        </h1>
+        <p>
+            Dear Participants,
+            <br> We are sorry to inform you that Xtream Pubg Mobile tournament which was all set to be held on 22.12.2019 at 11:00 am is now postponed due to interruption in internet services and implementation of Section 144 by Government as a result
+            we are not able to seek permission from City Magistrate Unnao . Event will be organized on new permitted date . All the 25 teams would be informed about new date and further updates.
+            <br> प्रिय प्रतिभागी,
+            <br> हमें आपको यह बताते हुए खेद है कि Xtream Pubg मोबाइल टूर्नामेंट जो 22.12.2019 को सुबह 11:00 बजे आयोजित किया जाना था, अब इंटरनेट सेवाओं में व्यवधान और सरकार द्वारा धारा 144 लागू होने के कारण स्थगित कर दिया गया है। फलस्वरूप हम सिटी मजिस्ट्रेट
+            उन्नाव से अनुमति लेने में सक्षम नहीं हैं। कार्यक्रम नई अनुमत तिथि पर आयोजित किया जाएगा। सभी 25 टीमों को नई तारीख और आगे के अपडेट के बारे में सूचित किया जाएगा।
+            <br> For more information contact 7651916025 or 9532871878
+        </p>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./img/ss1.jpeg" style="width:100%">
+            <div class="text"><a href="https://docs.google.com/forms/d/e/1FAIpQLScYtG64w4G2B6wD7ZnkQh0UzZDkZqRo3wVfe1QRJvlpxZlVjA/viewform?usp=sf_link" target="blank" style="color: chartreuse; background-color: chocolate; opacity: 0.6;max-width: 80px;">Register Now</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./img/img1.jpeg" style="width:100%">
+            <div class="text"><a href="https://docs.google.com/forms/d/e/1FAIpQLScYtG64w4G2B6wD7ZnkQh0UzZDkZqRo3wVfe1QRJvlpxZlVjA/viewform?usp=sf_link" target="blank" style="color: chartreuse; background-color: chocolate; opacity: 0.6;max-width: 80px;">Register Now</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./img/img2.jpeg" style="width:100%">
+            <div class="text"><a href="https://docs.google.com/forms/d/e/1FAIpQLScYtG64w4G2B6wD7ZnkQh0UzZDkZqRo3wVfe1QRJvlpxZlVjA/viewform?usp=sf_link" target="blank" style="color: chartreuse; background-color: chocolate; opacity: 0.6;max-width: 80px;">Register Now</a></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function increase() {
+            slideIndex += 1;
+            showSlides(slideIndex);
+
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(increase, 4000);
+        }
+    </script>
+
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Register Now(Limited seats, Hurry!)</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScYtG64w4G2B6wD7ZnkQh0UzZDkZqRo3wVfe1QRJvlpxZlVjA/viewform?usp=sf_link" target="blank">Register Team</a>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">About Us</h1>
+                <p>
+                    We have just started.. Something big is being cooked
+                </p>
+                <p class="dark">
+                    It is a live PUBG MOBILE tournament which will be held on 15 December 2019 at JP Palace, lok nagar, unnao. Participants need to be physically present at the venue on time. Players will be joined in a common room in game made by oraganiser There will be
+                    a price money which will be according to the collection of money by tickets and sponsors.
+                </p>
+                <img src="./img/ab1.jpeg" style="width: 100%;float: left;margin: 10px;">
+
+
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>What We Do</h3>
+                    <p>We are non-buisness non-profit non-official oraganisation who are moved by interest of new generation towards Pubg Mobile. We organise tournaments for public with a huge price money to setup a platform for playing enthusiasts.</p>
+                </div>
+                <img src="./img/ab3.jpeg" style="width: 100%;float: right;margin: 10px;">
+                <img src="./img/ab2.jpeg" style="width: 100%;float: right;margin: 10px;">
+            </aside>
+
+        </div>
+    </section>
+    <div style="text-align: center;text-shadow: 2px 2px 2px yellow;color: blanchedalmond;overflow: hidden;">
+        <h1>OUR OFFICIAL SPONSORS</h1>
+    </div>
+    <section id="boxes">
+        <div class="container">
+
+            <div class="box">
+                <img src="./img/ascent.jpeg">
+                <h3>ASCENT COLLEGES</h3>
+                <p>Ascent Khalsa College, Chamrauli, Unnao</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/bejoy.jpeg">
+                <h3>BEJOY TOURISM</h3>
+                <p>Bejoy Tourism Pvt. Ltd.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/dut.jpeg">
+                <h3>DAINIK UNITED TIMES</h3>
+                <p>Jagannath Ganj, Unnao</p>
+            </div>
+            <div class="box">
+                <img src="./img/anwar.jpeg">
+                <h3>ANWAR-E-QUAM</h3>
+                <p>Jagannath Ganj, Unnao</p>
+            </div>
+            <div class="box">
+                <img src="./img/foodp.jpeg">
+                <h3>FOOD PLAZA</h3>
+                <p>Near rangoli guest house, Darogha Bagh, Unnao</p>
+            </div>
+            <div class="box">
+                <img src="./img/pizza hunt.jpeg">
+                <h3>PIZZA HUNT</h3>
+                <p>Behind UBA buiding, UDA colony, Unnao</p>
+            </div>
+            <div class="box">
+                <img src="./img/cksm.jpeg">
+                <h3>CHATRAPATI KHAJAN SINGH MAHAVIDYALAY</h3>
+                <p>CHATRAPATI KHAJAN SINGH MAHAVIDYALAY, LOK NAGAR, Unnao</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="doucument">
+        <div class="container">
+            <div style="text-align: center;text-shadow: 2px 2px 2px yellow;color: blanchedalmond;overflow: hidden;">
+                <h1>Rules AND Terms</h1>
+            </div>
+
+            <a href="tc.pdf" target="blank"><img src="./img/Screen.png " style="width:100%; box-shadow: 10px; border: 5px beige;"></a>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container ">
+            <h1>contact</h1>
+            <p>Event Timing: December 22nd 2019, 12:00 P.M. to 5:00 PM<br> Event Address: JP Palace,beside lok nagar crossing, LOK NAGAR, UNNAO<br> Contact us at 7651916025 or satyash92@gmail.com <br> For More Info Visit: xtream.rf.gd or https://tiny.cc/xtreampubg</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Xtream Tournaments By: Manthan Maheshwari & Shivansh Shukla Copyright &copy; 2019</p>
+    </footer>
+</body>
+
+</html>
